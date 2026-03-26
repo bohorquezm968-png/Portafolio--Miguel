@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio | Miguel Bohórquez</title>
+    <style>
+        :root {
+            --primary: #1a2a6c;
+            --secondary: #b21f1f;
+            --accent: #3498db;
+            --text: #2c3e50;
+            --bg: #f8f9fa;
+        }
+        body { font-family: 'Segoe UI', system-ui, sans-serif; background: var(--bg); margin: 0; padding: 20px; color: var(--text); line-height: 1.6; }
+        .container { max-width: 650px; margin: 40px auto; background: white; padding: 40px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); border-top: 10px solid var(--primary); }
+        header { text-align: center; border-bottom: 2px solid #eee; padding-bottom: 20px; margin-bottom: 30px; }
+        h1 { margin: 0; font-size: 32px; color: var(--primary); letter-spacing: -0.5px; }
+        .id-card { color: #7f8c8d; font-size: 14px; font-weight: bold; margin-top: 5px; }
+        .status-badge { display: inline-block; background: #e8f4fd; color: var(--accent); padding: 6px 15px; border-radius: 50px; font-size: 14px; font-weight: 700; margin-top: 15px; border: 1px solid #d1e9f9; }
+        h3 { color: var(--primary); font-size: 20px; margin-top: 30px; display: flex; align-items: center; }
+        h3::after { content: ""; flex: 1; height: 1px; background: #eee; margin-left: 15px; }
+        .project-item { background: #fdfdfd; border: 1px solid #edf2f7; border-radius: 10px; padding: 15px; margin-bottom: 15px; transition: transform 0.2s; }
+        .project-item:hover { transform: translateY(-3px); border-color: var(--accent); }
+        .project-item strong { color: var(--accent); font-size: 16px; display: block; margin-bottom: 5px; }
+        .contact-footer { margin-top: 40px; text-align: center; }
+        .btn-whatsapp { background: #25d366; color: white; text-decoration: none; padding: 12px 25px; border-radius: 8px; font-weight: bold; font-size: 15px; display: inline-block; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Miguel Bohórquez</h1>
+        <div class="id-card">C.I. 30.135.639</div>
+        <span class="status-badge">⚡ Estudiante de Ingeniería Electrónica (6to Semestre)</span>
+    </header>
+
+    <section>
+        <h3>Sobre mí</h3>
+        <p>Estudiante avanzado con sólida base en circuitos electrónicos. Me apasiona el diseño de hardware y la resolución de problemas técnicos mediante la implementación de sistemas analógicos y digitales.</p>
+    </section>
+
+    <section>
+        <h3>Proyectos Realizados</h3>
+        
+        <div class="project-item">
+            <strong>🔊 Amplificadores de Sonido</strong>
+            Diseño y ensamblaje de etapas de potencia de audio con enfoque en fidelidad y eficiencia.
+        </div>
+
+        <div class="project-item">
+            <strong>💧 Medidor de Nivel de Agua</strong>
+            Implementación de sistemas de control de fluidos utilizando sensores electrónicos y visualización en tiempo real.
+        </div>
+
+        <div class="project-item">
+            <strong>🔧 Otras Competencias</strong>
+            Manejo de instrumental de laboratorio, soldadura de precisión y simulación de circuitos en software especializado.
+        </div>
+    </section>
+
+    <footer class="contact-footer">
+        <p>¿Interesado en colaborar en un proyecto?</p>
+        <a href="https://wa.me" class="btn-whatsapp">Contactar por WhatsApp</a>
+    </footer>
+</div>
+
+</body>
+</html>
